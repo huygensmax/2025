@@ -1,7 +1,7 @@
 name: Daily Check
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'
 jobs:
   update-repo:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
       - name: Configure Git
         run: |
           git config --global user.name "huygensmax"
-          git config --global user.email "thibaut.tresse@gmail.com"
+          git config --global user.email "tibo.10@hotmail.fr"
 
       - name: Make a change
         run: |
